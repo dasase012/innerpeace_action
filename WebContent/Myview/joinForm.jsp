@@ -25,14 +25,9 @@
 </head>
 
 <body>
-	<!-- return logo top right -->
-	<a href="/innerpeace/Intropage/intro_v1.jsp">
-	<img class="w3-right" src="<%=request.getContextPath() %>/resources/home.png" style="width: 40px; height: 40px;">
-	</a></h1>
-	
+		
  <div class="w3-container w3-display-center w3-teal" style="width: 50%; margin-left:25%; margin-right:25%;">
 	
-
 		<hr width = 500 size=2 >
 
 		<h2 align="center">innerpeace 회원 가입</h2>
@@ -41,7 +36,12 @@
 	</div>
 	 <div class="w3-container w3-display-center" style="width: 60%; margin-left:20%; margin-right:20%;">
 	
-	<form action="joinSuccess" method="post" >
+	
+	<!-- <div class="w3-container w3-half w3-margin-top w3-display-middle" style="width:60%">
+  		<ul class="w3-ul w3-border  w3-hover-shadow">
+  			<li class="w3-teal w3-xlarge w3-center w3-padding-32">innerpeace 회원가입</li> -->
+	<form class="w3-container w3-card-4" action="joinSuccess" method="post">
+	
 
 		<!-- 기본정보 -->
 			<label class="w3-text-teal">
@@ -87,11 +87,11 @@
 			<label>
 			
 			<input type="submit" value="작성완료"><!-- &nbsp;&nbsp; -->
-			<input type="reset" value="다시작성"></label></form>
-		
-	</form>
-	
-	
+			<input type="reset" value="다시작성">
+			<input type="button" value="취소" onclick="window.location.href='/innerpeace_action/intro_v1.jsp'">
+			</label>		
+		</form>
+	 </ul>
 	</div>
 
 </body>

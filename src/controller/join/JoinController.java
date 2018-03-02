@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.sist.msk.Action;
 
@@ -55,4 +56,17 @@ public class JoinController extends Action{
 	
 		return null;
 	}	
+	public String loginForm(HttpServletRequest request,
+			 HttpServletResponse response)  throws Throwable { 
+			 return  "/Myview/loginForm.jsp"; 
+			}
+	
+	
+	public String logout(HttpServletRequest request,
+			 HttpServletResponse response)  throws Throwable { 
+		HttpSession session = request.getSession();
+		session.invalidate();
+		response.sendRedirect("/innerpeace_action/intro_v1.jsp");
+		return  null; 
+	} 
 }

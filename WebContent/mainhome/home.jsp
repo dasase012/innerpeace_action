@@ -1,18 +1,18 @@
+<%@page import="controller.member.JoinDataBean"%>
+<%@page import="controller.member.JoinDBBean"%>
 <%@page import="java.text.SimpleDateFormat"%>
-<%@page import="login.JoinDataBean"%>
-<%@page import="login.JoinDBBean"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <html>
 <head>
 <meta charset="euc-kr" />
-<link href="/innerpeace/mainhome/fullcalendar-3.8.2/fullcalendar.min.css" rel="stylesheet" />
-<link href="/innerpeace/mainhome/fullcalendar-3.8.2/fullcalendar.print.min.css" rel="stylesheet" media="print" />
+<link href="/innerpeace_action/mainhome/fullcalendar-3.8.2/fullcalendar.min.css" rel="stylesheet" />
+<link href="/innerpeace_action/mainhome/fullcalendar-3.8.2/fullcalendar.print.min.css" rel="stylesheet" media="print" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="/innerpeace/mainhome/fullcalendar-3.8.2/lib/moment.min.js"></script>
-<script src="/innerpeace/mainhome/fullcalendar-3.8.2/lib/jquery.min.js"></script>
-<script src="/innerpeace/mainhome/fullcalendar-3.8.2/fullcalendar.min.js"></script>
+<script src="/innerpeace_action/mainhome/fullcalendar-3.8.2/lib/moment.min.js"></script>
+<script src="/innerpeace_action/mainhome/fullcalendar-3.8.2/lib/jquery.min.js"></script>
+<script src="/innerpeace_action/mainhome/fullcalendar-3.8.2/fullcalendar.min.js"></script>
 <script>
 
   $(document).ready(function() {
@@ -152,11 +152,11 @@
 <body>
 	
 	<!-- home logo top right -->
-		<a href="/innerpeace/mainhome/home.jsp">
+		<a href="home.jsp">
 		<i id="home" class="material-icons" style="font-size:36px">home</i>
 		</a>
 	<!-- Logout logo top right -->
-		<a href="/innerpeace/membershipUser/logout.jsp">
+		<a href="logout">
 		<i id="logout" class="material-icons" style="font-size:36px">power_settings_new</i>
 		</a>
 		
