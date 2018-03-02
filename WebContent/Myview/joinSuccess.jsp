@@ -4,6 +4,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${id}:${name}님, 회원가입에 성공했습니다.
+	${info.id}:${info.name}님, 회원가입에 성공했습니다.
 </body>
 </html>

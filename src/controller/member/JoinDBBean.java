@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -228,6 +229,7 @@ public class JoinDBBean {
 		pstmt.setString(9,info.getCon_date());
 		pstmt.setString(10,info.getCon_cat());
 		pstmt.setString(11,info.getPosition());
+		pstmt.setTimestamp(12, new Timestamp(info.getRegdate().getTime()));
 		pstmt.executeUpdate();
 		}catch(SQLException e1) {
 			e1.printStackTrace();

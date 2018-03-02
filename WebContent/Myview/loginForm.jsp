@@ -11,7 +11,7 @@
 <div class="w3-container w3-half w3-margin-top w3-display-middle" style="width:30%">
   <ul class="w3-ul w3-border  w3-hover-shadow">
   <li class="w3-teal w3-xlarge w3-center w3-padding-32">로그인하기</li>
-<form class="w3-container w3-card-4" action="/innerpeace_action/mainhome/home.jsp" method="post">
+<form class="w3-container w3-card-4" action="/innerpeace_action/mainhome/home" method="post">
 
 <p>
 <input class="w3-input" type="text" style="width:90%" required>
